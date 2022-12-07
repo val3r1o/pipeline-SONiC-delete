@@ -1,0 +1,7 @@
+
+
+
+- name: Delete all system related configs in device configuration
+  dellemc.enterprise_sonic.sonic_system:
+    config:
+    state: deleted
