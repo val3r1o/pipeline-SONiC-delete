@@ -1,0 +1,12 @@
+fabric-LEAF-3 ansible_host=10.180.72.106
+
+
+[spine]
+
+[leaf]
+fabric-LEAF-3
+
+
+[fabric:children]
+spine
+leaf

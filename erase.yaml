@@ -1,0 +1,18 @@
+---
+- name: Delete full config
+  hosts: fabric
+  connection: network_cli
+  gather_facts: false
+  #collections:
+  #  - dellemc.enterprise_sonic
+  tasks:
+#    - name: Erase
+#      dellemc.enterprise_sonic.sonic_command:
+#        commands: 
+#          - command: 'write erase'
+#            #prompt: '[continue? [y/N]]: ?$'
+#            answer: 'yes'
+        
+    - name: Reboot
+      dellemc.enterprise_sonic.sonic_command:
+        commands: 'reboot'
