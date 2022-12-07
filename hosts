@@ -1,0 +1,80 @@
+fabric-SPINE-1 ansible_host=10.180.72.100
+fabric-LEAF-1 ansible_host=10.180.72.104
+fabric-SPINE-2 ansible_host=10.180.72.101
+fabric-LEAF-2 ansible_host=10.180.72.105
+fabric-SPINE-3 ansible_host=10.180.72.102
+fabric-LEAF-3 ansible_host=10.180.72.106
+fabric-SPINE-4 ansible_host=10.180.72.103
+fabric-LEAF-4 ansible_host=10.180.72.107
+fabric-LEAF-5 ansible_host=10.180.72.108
+fabric-LEAF-6 ansible_host=10.180.72.109
+fabric-LEAF-7 ansible_host=10.180.72.110
+fabric-LEAF-8 ansible_host=10.180.72.111
+fabric-LEAF-9 ansible_host=10.180.72.112
+fabric-LEAF-10 ansible_host=10.180.72.113
+fabric-LEAF-11 ansible_host=10.180.72.114
+fabric-LEAF-12 ansible_host=10.180.72.115
+fabric-LEAF-13 ansible_host=10.180.72.116
+fabric-LEAF-14 ansible_host=10.180.72.117
+fabric-LEAF-15 ansible_host=10.180.72.118
+fabric-LEAF-16 ansible_host=10.180.72.119
+fabric-LEAF-17 ansible_host=10.180.72.120
+fabric-LEAF-18 ansible_host=10.180.72.121
+fabric-LEAF-19 ansible_host=10.180.72.122
+fabric-LEAF-20 ansible_host=10.180.72.123
+fabric-LEAF-21 ansible_host=10.180.72.124
+fabric-LEAF-22 ansible_host=10.180.72.125
+fabric-LEAF-23 ansible_host=10.180.72.126
+fabric-LEAF-24 ansible_host=10.180.72.127
+fabric-LEAF-25 ansible_host=10.180.72.128
+fabric-LEAF-26 ansible_host=10.180.72.129
+fabric-LEAF-27 ansible_host=10.180.72.130
+fabric-LEAF-28 ansible_host=10.180.72.131
+fabric-LEAF-29 ansible_host=10.180.72.132
+fabric-LEAF-30 ansible_host=10.180.72.133
+fabric-LEAF-31 ansible_host=10.180.72.134
+fabric-LEAF-32 ansible_host=10.180.72.135
+
+[spine]
+fabric-SPINE-1
+fabric-SPINE-2
+fabric-SPINE-3
+fabric-SPINE-4
+
+[leaf]
+fabric-LEAF-1
+fabric-LEAF-2
+fabric-LEAF-3
+fabric-LEAF-4
+fabric-LEAF-5
+fabric-LEAF-6
+fabric-LEAF-7
+fabric-LEAF-8
+fabric-LEAF-9
+fabric-LEAF-10
+fabric-LEAF-11
+fabric-LEAF-12
+fabric-LEAF-13
+fabric-LEAF-14
+fabric-LEAF-15
+fabric-LEAF-16
+fabric-LEAF-17
+fabric-LEAF-18
+fabric-LEAF-19
+fabric-LEAF-20
+fabric-LEAF-21
+fabric-LEAF-22
+fabric-LEAF-23
+fabric-LEAF-24
+fabric-LEAF-25
+fabric-LEAF-26
+fabric-LEAF-27
+fabric-LEAF-28
+fabric-LEAF-29
+fabric-LEAF-30
+fabric-LEAF-31
+fabric-LEAF-32
+
+[fabric:children]
+spine
+leaf
