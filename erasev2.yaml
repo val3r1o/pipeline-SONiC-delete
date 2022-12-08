@@ -1,23 +1,22 @@
 - hosts: fabric
   connection: network_cli
   gather_facts: false
-  #collections:
-  #  - dellemc.enterprise_sonic
+  collections:
+    - dellemc.enterprise_sonic
 
   tasks:
   - name: Erase
-    cli_command:
-      command: "write erase"
-      prompt:
-        - All Configs EXCEPT mgmt0 and user/psw will be removed.
-      answer:
-        - yes
-        
+    dellemc.enterprise_sonic.sonic_command:
+      commands:
+        - command: 'write erase'
+          prompt: '$'
+          answer: 'y'
+          
 - hosts: fabric
   connection: network_cli
   gather_facts: false
-  #collections:
-  #  - dellemc.enterprise_sonic
+  collections:
+    - dellemc.enterprise_sonic
   
   tasks:
   - name: Reboot
