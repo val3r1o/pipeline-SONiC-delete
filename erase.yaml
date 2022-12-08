@@ -18,3 +18,10 @@
       tags: reboot 
         become: true
         reboot:
+
+    - name: Wait for system to get ready
+      command: "show system status"
+      register: result
+      until: result.stdout.find("System is ready") >= 0
+      retries: 15
+      delay: 15
