@@ -1,0 +1,31 @@
+fabric-SPINE-1 ansible_host=10.180.72.100
+fabric-SPINE-2 ansible_host=10.180.72.101
+
+fabric-LEAF-3 ansible_host=10.180.72.106
+fabric-LEAF-4 ansible_host=10.180.72.107
+
+fabric-LEAF-23 ansible_host=10.180.72.126
+fabric-LEAF-24 ansible_host=10.180.72.127
+
+fabric-LEAF-31 ansible_host=10.180.72.134
+fabric-LEAF-32 ansible_host=10.180.72.135
+
+[spine]
+fabric-SPINE-1
+fabric-SPINE-2
+
+
+[leaf]
+
+fabric-LEAF-3
+fabric-LEAF-4
+
+fabric-LEAF-23
+fabric-LEAF-24
+
+fabric-LEAF-31
+fabric-LEAF-32
+
+[fabric:children]
+spine
+leaf
