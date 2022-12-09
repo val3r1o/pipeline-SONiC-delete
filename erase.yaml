@@ -22,7 +22,8 @@
   - name: Reboot
     dellemc.enterprise_sonic.sonic_command:
       commands: 'reboot'
-      
+      #wait_for: result[0] contains ready 
+          
   - name: Wait for system to get ready
     command: "show system status"
     register: result
