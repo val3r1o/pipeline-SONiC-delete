@@ -28,5 +28,5 @@
     command: "show system status"
     register: result
     until: result.stdout.find("System is ready") >= 03
-    retries: 15
-    delay: 15
+    retries: 5
+    delay: 120
